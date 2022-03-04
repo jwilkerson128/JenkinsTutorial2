@@ -39,9 +39,17 @@ class Calculator {
     etc
      */
     int fibonacciNumberFinder(int n){
-        int previousNumber = 0;
+        if(n == 0) {
+            return 0;
+        }
+
+        else if(n < 3) {
+            return 1;
+        }
+
+        int previousNumber = 1;
         int nextNumber = 1;
-        for (int i = 1; i <= n; ++i)
+        for (int i = 2; i < n; ++i)
         {
             /* On each iteration, we are assigning second number
              * to the first number and assigning the sum of last two
