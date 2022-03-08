@@ -2,7 +2,9 @@ import java.util.UUID;
 
 class Calculator {
 
-    Calculator(){}
+    Calculator(){
+
+    }
 
     int add(int a , int b){
         return a + b;
